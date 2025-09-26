@@ -1,0 +1,15 @@
+{
+  "itemGroup.starminerreborn": "Example Mod Tab",
+  "item.starminerreborn.feur": "RATIO",
+  "item.starminerreborn.rose": "Rose",
+  "block.starminerreborn.mogus": "Mogus",
+
+
+  "starminerreborn.configuration.title": "Starminer Reborn Configs",
+  "starminerreborn.configuration.section.starminerreborn.common.toml": "Starminer Reborn Configs",
+  "starminerreborn.configuration.section.starminerreborn.common.toml.title": "Starminer Reborn Configs",
+  "starminerreborn.configuration.items": "Item List",
+  "starminerreborn.configuration.logDirtBlock": "Log Dirt Block",
+  "starminerreborn.configuration.magicNumberIntroduction": "Magic Number Text",
+  "starminerreborn.configuration.magicNumber": "Magic Number"
+}
