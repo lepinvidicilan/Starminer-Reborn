@@ -31,6 +31,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.video_jeu.starminerreborn.block.ModBlocks;
+import net.video_jeu.starminerreborn.item.ModCreativeModeTabs;
 import net.video_jeu.starminerreborn.item.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -48,6 +49,9 @@ public class StarminerReborn {
         // Note that this is necessary if and only if we want *this* class (StarminerReborn) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        
+        ModCreativeModeTabs.register(modEventBus);
+        
         
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
