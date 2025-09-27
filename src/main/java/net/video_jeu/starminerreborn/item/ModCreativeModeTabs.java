@@ -22,8 +22,9 @@ public class ModCreativeModeTabs {
 			.icon(() -> new ItemStack(ModItems.FEUR.get()))
 			.title(Component.translatable("creativetab.starminerreborn.starminer_reborn_items"))
 			.displayItems((itemDisplayParameters, output) -> {
+				output.accept(ModBlocks.CAMELIA);
 				output.accept(ModItems.FEUR);
-				output.accept(ModItems.ROSE);
+				output.accept(ModBlocks.ROSE);
 				output.accept(ModBlocks.MOGUS);
 			}).build());
 	

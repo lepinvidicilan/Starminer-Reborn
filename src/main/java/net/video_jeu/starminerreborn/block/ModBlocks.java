@@ -24,6 +24,23 @@ public class ModBlocks {
 					)
 			);
 	
+	public static final DeferredBlock<Block> ROSE = registerBlock("rose",
+			() -> new Block(BlockBehaviour.Properties.of()
+					.noCollission()
+					.instabreak()
+					.requiresCorrectToolForDrops()
+					.sound(SoundType.GRASS)
+					)
+			);
+	
+	public static final DeferredBlock<Block> CAMELIA = registerBlock("camelia",
+			() -> new Block(BlockBehaviour.Properties.of()
+					.noCollission()
+					.instabreak()
+					.requiresCorrectToolForDrops()
+					.sound(SoundType.GRASS)
+					)
+			);
 	
 	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
 		DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -10,8 +10,8 @@ public class ModItems {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StarminerReborn.MOD_ID);
 	
 	public static final DeferredItem<Item> FEUR = ITEMS.register("feur", () -> new Item(new Item.Properties()));
-	
-	public static final DeferredItem<Item> ROSE = ITEMS.register("rose", () -> new Item(new Item.Properties()));
+		
+	public static final DeferredItem<Item> CROWN = ITEMS.register("crown", () -> new Item(new Item.Properties()));
 	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

@@ -1,0 +1,21 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"category":"misc",
+	"key": {
+		"C":{
+			"item": "starminerreborn:camelia"
+			},
+		"R":{
+			"item":"starminerreborn:rose"
+		}
+	},
+	"pattern":[
+		"CR ",
+		"   ",
+		"   "
+	],
+	"result": {
+		"count": 1,
+		"id": "starminerreborn:crown"
+	}
+}

@@ -71,7 +71,11 @@ public class StarminerReborn {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
     	if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
     		event.accept(ModItems.FEUR);
-    		event.accept(ModItems.ROSE);
+    	}
+    	
+    	if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+    		event.accept(ModBlocks.ROSE);
+    		event.accept(ModBlocks.CAMELIA);
     	}
     	
     	if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

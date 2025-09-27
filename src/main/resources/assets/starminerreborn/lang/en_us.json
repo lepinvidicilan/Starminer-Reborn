@@ -1,8 +1,13 @@
 {
   "itemGroup.starminerreborn": "Example Mod Tab",
   "item.starminerreborn.feur": "RATIO",
-  "item.starminerreborn.rose": "Rose",
+  "item.starminerreborn.crown": "Crown",
+  
   "block.starminerreborn.mogus": "Mogus",
+  "block.starminerreborn.rose": "Rose",
+  "block.starminerreborn.camelia": "Camelia",
+
+  
   "creativetab.starminerreborn.starminer_reborn_items": "Starminer Items",
 
 
