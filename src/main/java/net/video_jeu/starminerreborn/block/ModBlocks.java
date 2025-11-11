@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.video_jeu.starminerreborn.StarminerReborn;
+import net.video_jeu.starminerreborn.block.custom.MagicBlock;
 import net.video_jeu.starminerreborn.item.ModItems;
 
 public class ModBlocks {
@@ -28,16 +29,17 @@ public class ModBlocks {
 			() -> new Block(BlockBehaviour.Properties.of()
 					.noCollission()
 					.instabreak()
-					.requiresCorrectToolForDrops()
 					.sound(SoundType.GRASS)
 					)
 			);
+	
+	public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+			() -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 	
 	public static final DeferredBlock<Block> CAMELIA = registerBlock("camelia",
 			() -> new Block(BlockBehaviour.Properties.of()
 					.noCollission()
 					.instabreak()
-					.requiresCorrectToolForDrops()
 					.sound(SoundType.GRASS)
 					)
 			);

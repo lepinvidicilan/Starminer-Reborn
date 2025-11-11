@@ -1,18 +1,13 @@
 {
-	"type" : "minecraft:crafting_shaped",
+	"type" : "minecraft:crafting_shapeless",
 	"category":"misc",
-	"key": {
-		"C":{
+	"ingredients": [
+		{
 			"item": "starminerreborn:camelia"
-			},
-		"R":{
+		},
+		{
 			"item":"starminerreborn:rose"
 		}
-	},
-	"pattern":[
-		"CR ",
-		"   ",
-		"   "
 	],
 	"result": {
 		"count": 1,

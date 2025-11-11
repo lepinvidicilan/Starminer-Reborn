@@ -2,8 +2,10 @@
   "itemGroup.starminerreborn": "Example Mod Tab",
   "item.starminerreborn.feur": "RATIO",
   "item.starminerreborn.crown": "Crown",
+  "item.starminerreborn.chisel": "Chisel",
   
   "block.starminerreborn.mogus": "Mogus",
+  "block.starminerreborn.magic_block": "Magic Block",
   "block.starminerreborn.rose": "Rose",
   "block.starminerreborn.camelia": "Camelia",
 
