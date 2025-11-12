@@ -15,41 +15,39 @@ import net.minecraft.world.level.block.Blocks;
 import net.video_jeu.starminerreborn.block.ModBlocks;
 
 public class ChiselItem extends Item {
-	private static final Map<Block, Block> CHISEL_MAP = 
-			Map.of(
-					Blocks.STONE, Blocks.STONE_BRICKS,
-					Blocks.END_STONE, Blocks.END_STONE_BRICKS,
-					Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
-					Blocks.GOLD_BLOCK, Blocks.IRON_BLOCK,
-					Blocks.IRON_BLOCK, ModBlocks.ROSE.get()
-			);
+  private static final Map<Block, Block> CHISEL_MAP = Map.of(
+      Blocks.STONE, Blocks.STONE_BRICKS,
+      Blocks.END_STONE, Blocks.END_STONE_BRICKS,
+      Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
+      Blocks.GOLD_BLOCK, Blocks.IRON_BLOCK,
+      Blocks.IRON_BLOCK, ModBlocks.ROSE.get());
 
-	public ChiselItem(Properties properties) {
-		super(properties);
-		// TODO Auto-generated constructor stub
-	}
-	
-	@Override
-	public InteractionResult useOn(UseOnContext context) {
-		Level level = context.getLevel();
-		Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-		
-		if(CHISEL_MAP.containsKey(clickedBlock)) {
-			if(!level.isClientSide()){
-				//Only on serverside
-				level.setBlockAndUpdate(context.getClickedPos(), CHISEL_MAP.get(clickedBlock).defaultBlockState());
-				
-				context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
-						item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-				
-				level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
-			}
-			if(level.isClientSide()) {
-				//Only on clientside
-			}
-		}
-		
-		return super.useOn(context);
-	}
-	
+  public ChiselItem(Properties properties) {
+    super(properties);
+    // TODO Auto-generated constructor stub
+  }
+
+  @Override
+  public InteractionResult useOn(UseOnContext context) {
+    Level level = context.getLevel();
+    Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
+
+    if (CHISEL_MAP.containsKey(clickedBlock)) {
+      if (!level.isClientSide()) {
+        // Only on serverside
+        level.setBlockAndUpdate(context.getClickedPos(), CHISEL_MAP.get(clickedBlock).defaultBlockState());
+
+        context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
+            item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
+
+        level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+      }
+      if (level.isClientSide()) {
+        // Only on clientside
+      }
+    }
+
+    return super.useOn(context);
+  }
+
 }

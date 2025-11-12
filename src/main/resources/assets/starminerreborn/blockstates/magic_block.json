@@ -1,7 +1,7 @@
 {
-	"variants":{
-		"": {
-			"model": "starminerreborn:block/placeholder_block"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "starminerreborn:block/placeholder_block"
+    }
+  }
 }
