@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+FMLCorePlugin: jp.mc.ancientred.starminer.core.SMPlugin
+FMLCorePluginContainsFMLMod: true
+
