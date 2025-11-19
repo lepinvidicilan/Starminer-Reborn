@@ -3,14 +3,10 @@ package net.video_jeu.starminerreborn.item.custom;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
 import net.video_jeu.starminerreborn.gravityapi.Gravity;
-import net.video_jeu.starminerreborn.gravityapi.GravityComponent;
-import net.video_jeu.starminerreborn.mixins.ApplyGravity;
 
 public class ChiselItem extends Item {
   // private static final Map<Block, Block> CHISEL_MAP = Map.of(

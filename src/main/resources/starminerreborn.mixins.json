@@ -2,7 +2,7 @@
   "required": true,
   "package": "net.video_jeu.starminerreborn.mixins",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["ApplyGravity"],
+  "mixins": ["EntityMixin"],
   "client": [],
   "injectors": {
     "defaultRequire": 1
